@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芒果干共和国 - 欢迎您</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #FFCC33; /* 芒果黄色背景 */
+            font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* 芒果装饰图案 */
+        .mango-decoration {
+            position: absolute;
+            opacity: 0.2;
+            font-size: 120px;
+            z-index: 0;
+        }
+        
+        .mango1 {
+            top: 10%;
+            left: 10%;
+            transform: rotate(-20deg);
+        }
+        
+        .mango2 {
+            bottom: 15%;
+            right: 12%;
+            transform: rotate(25deg);
+        }
+        
+        /* 主标题区域 */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            color: #8B4513; /* 深棕色文字 */
+            text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.5);
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        
+        /* 按钮样式 */
+        .enter-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #FFD700; /* 金色按钮 */
+            color: #8B4513;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 3px solid #fff;
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .enter-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(139, 69, 19, 0.5);
+            background-color: #FFDF33;
+        }
+        
+        .enter-button:active {
+            transform: translateY(1px);
+        }
+        
+        /* 底部装饰 */
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            color: rgba(139, 69, 19, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                padding: 0 20px;
+            }
+            
+            .enter-button {
+                padding: 12px 30px;
+                font-size: 1.2rem;
+            }
+            
+            .mango-decoration {
+                font-size: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 主标题 -->
+    <div class="header">
+        <h1>欢迎来到芒果干共和国</h1>
+    </div>
+    
+    <!-- 进入按钮 -->
+    <a href="https://mango-republic.github.io/mango-republic/" class="enter-button">进入官网</a>
+    
+    <!-- 底部文本 -->
+    <div class="footer">芒果干共和国官方网站| © 2025</div>
+</body>
+</html>
